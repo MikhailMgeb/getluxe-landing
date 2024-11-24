@@ -1,0 +1,44 @@
+.featureItem {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	position: relative;
+	padding: 15px 0;
+	border-top: 1px solid #c9c9c9;
+	overflow: hidden;
+}
+
+.content {
+	grid-column: 1;
+}
+
+.wrapperFeatureNumber {
+	position: relative;
+	overflow: hidden; /* Скрывает всё, что выходит за пределы */
+	height: 100px; /* Высота обертки, настраиваемая по дизайну */
+	width: 100%; /* Настройка ширины */
+}
+
+.featureNumber {
+	font-size: 96px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.1);
+	text-align: right;
+	position: absolute;
+	z-index: 1;
+	top: 95px;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.featureTitle {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.featureDescription {
+	font-size: 16px;
+	color: #555;
+	line-height: 1.6;
+}

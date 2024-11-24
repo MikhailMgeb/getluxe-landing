@@ -1,0 +1,31 @@
+.header {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	background-color: inherit;
+	justify-content: space-between;
+	margin: 30px 72px;
+}
+
+.headerWrapper {
+	display: flex;
+	gap: 40px;
+}
+
+.navList {
+	list-style: none;
+	display: flex;
+	gap: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 768px) {
+	.header {
+		gap: 10px;
+	}
+	
+	.navList {
+		gap: 20px;
+	}
+}

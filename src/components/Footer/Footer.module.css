@@ -1,0 +1,101 @@
+.footer {
+	background-color: inherit;
+	color: #333;
+	padding: 40px 0;
+	margin: 30px 72px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 70px;
+	padding: 30px 0 50px 0;
+	align-items: center;
+}
+
+.logoSection {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	flex: 1;
+	min-width: 200px;
+}
+
+.sectionText {
+	color: #000;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21px;
+	opacity: 0.5;
+}
+
+.containerNavigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 2;
+	gap: 20px;
+}
+
+.NavigationTitle {
+	color: #a9a9a9;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21px;
+}
+
+.linksSection {
+	display: flex;
+	gap: 100px;
+}
+
+.footerList {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.footerNavLink {
+	color: #211a12;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.footerNavLink:hover {
+	color: #000;
+}
+
+.contactSection {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	min-width: 200px;
+}
+
+.contactCenter {
+	color: #a9a9a9;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	text-align: right;
+}
+
+.phoneNumber {
+	color: #211a12;
+	font-family: UNCAGE, Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 36px;
+	text-align: right;
+}
+
+.socialIcons {
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+}

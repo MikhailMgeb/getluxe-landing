@@ -1,0 +1,53 @@
+.featuresBlock {
+	margin: 30px 72px;
+	background-color: inherit;
+	display: grid;
+	grid-template-areas:
+    "text image"
+    "list image";
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+
+.textContent {
+	grid-area: text;
+	align-self: start;
+}
+
+/* Фото iPhone */
+.imageContainer {
+	grid-area: image;
+	text-align: center;
+}
+
+.imageContainer img {
+	max-width: 100%;
+	height: auto;
+	justify-self: end;
+}
+
+.featuresList {
+	max-width: 636px;
+	grid-area: list;
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 768px) {
+	.featuresBlock {
+		grid-template-areas:
+      "text"
+      "image"
+      "list";
+		grid-template-columns: 1fr;
+	}
+	
+	.textContent {
+		text-align: center;
+	}
+	
+	.featuresList {
+		align-items: center;
+	}
+}

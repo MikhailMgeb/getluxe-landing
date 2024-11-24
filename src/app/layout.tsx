@@ -1,5 +1,9 @@
+import Footer from '@/components/Footer/Footer'
+import Header from '@/components/Header/Header'
 import type { Metadata } from "next";
 import "./globals.css";
+import Link from 'next/link'
+import React from 'react'
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,11 +17,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
-        {children}
-      </body>
+    <body
+      className={'page-container'}
+    >
+    <header>
+      <Header />
+    </header>
+    <main>
+      {children}
+    </main>
+    <footer className={'footer'}>
+      <Footer />
+    </footer>
+    <div className={'bottom'}>
+      <div className={'policyInfo'}>
+        <Link href="#">Политика обработки данных</Link>
+        <Link href="#">Политика конфиденциальности</Link>
+      </div>
+      
+      <p>© 2022 — 2024 «GETLUXE»</p>
+    </div>
+    </body>
     </html>
   );
 }
