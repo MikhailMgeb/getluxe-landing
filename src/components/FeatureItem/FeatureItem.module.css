@@ -14,9 +14,9 @@
 
 .wrapperFeatureNumber {
 	position: relative;
-	overflow: hidden; /* Скрывает всё, что выходит за пределы */
-	height: 100px; /* Высота обертки, настраиваемая по дизайну */
-	width: 100%; /* Настройка ширины */
+	overflow: hidden;
+	height: 100px;
+	width: 100%;
 }
 
 .featureNumber {

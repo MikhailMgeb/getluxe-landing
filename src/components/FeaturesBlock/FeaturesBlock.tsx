@@ -6,7 +6,6 @@ import styles from './FeaturesBlock.module.css';
 export default function FeaturesBlock() {
 	return (
 		<section className={styles.featuresBlock}>
-			{/* Почему выбирают GETLUXE */}
 			<div className={styles.textContent}>
 				<p className={styles.subtitle}>Почему выбирают GETLUXE</p>
 				<h2 className={styles.title}>
@@ -14,12 +13,9 @@ export default function FeaturesBlock() {
 				</h2>
 				<button className={styles.ctaButton}>Начать путешествие</button>
 			</div>
-			
-			{/* Фото iPhone */}
 			<div className={styles.imageContainer}>
 				<img src="/iPhone.png" alt="Приложение GETLUXE" />
 			</div>
-			
 			<div className={styles.featuresList}>
 				{features.map((feature) => (
 					<FeatureItem

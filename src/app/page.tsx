@@ -1,10 +1,13 @@
+import DownloadSection from '@/components/DownloadSection/DownloadSection'
 import FeaturesBlock from '@/components/FeaturesBlock/FeaturesBlock'
-import Image from "next/image";
+import HeroSection from '@/components/HeroSection/HeroSection'
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <FeaturesBlock />
+      <HeroSection/>
+      <DownloadSection />
     </div>
   );
 }

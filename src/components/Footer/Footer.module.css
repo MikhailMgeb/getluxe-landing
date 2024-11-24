@@ -99,3 +99,15 @@
 	justify-content: flex-end;
 	gap: 20px;
 }
+
+@media (max-width: 768px){
+	.contactCenter {
+		text-align: left;
+	}
+	.phoneNumber {
+		text-align: left;
+	}
+	.socialIcons {
+		justify-content: flex-start;
+	}
+}
