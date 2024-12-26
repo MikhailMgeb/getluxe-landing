@@ -1,4 +1,28 @@
 .featureItem {
+	display: flex;
+	justify-content: space-between;
+}
+
+.featureItemContainer {
+	max-width: 636px;
+}
+
+.imageContainer {
+	width: 526px;
+	text-align: center;
+	background-color: #fff;
+	height: 400px;
+	position: relative;
+	border-radius: 24px;
+	margin-left: 60px;
+}
+
+.imagePhone {
+	position: absolute;
+	top: -152px;
+}
+
+.description {
 	display: grid;
 	grid-template-columns: 1fr auto;
 	align-items: center;
@@ -41,4 +65,51 @@
 	font-size: 16px;
 	color: #555;
 	line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+	.contactCenter {
+		text-align: left;
+	}
+	
+}
+
+@media (max-width: 1000px) {
+	.imageContainer {
+		width: 410px;
+		top: -31px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.featureItem {
+		flex-direction: column-reverse;
+		margin-top: 220px;
+	}
+}
+
+@media (max-width: 430px) {
+	.imageContainer {
+		max-width: 100%;
+		height: 280px;
+	}
+	
+	.imagePhone {
+		top: -152px;
+	}
+}
+
+@media (max-width: 390px) {
+	.imageContainer {
+		max-width: 100%;
+		height: 280px;
+	}
+	
+	.featureItem {
+		max-width: 380px;
+	}
+	
+	.imagePhone {
+		top: -120px;
+	}
 }

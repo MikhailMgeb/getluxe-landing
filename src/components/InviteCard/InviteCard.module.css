@@ -1,0 +1,170 @@
+.inviteBlock {
+	min-width: 762px;
+	min-height: 464px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	background-color: #fff;
+	border-radius: 24px;
+	position: relative;
+	overflow: hidden;
+}
+
+.inviteText {
+	flex: 1 1 50%;
+	max-width: 410px;
+	padding: 14px;
+	margin-left: 50px;
+}
+
+.inviteTextTitle {
+	color: #211A12;
+	font-family: 'Inter', 'Helvetica', sans-serif;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-bottom: 10px;
+}
+
+.inviteTextDescription {
+	color: #211A12;
+	font-family: 'Inter', 'Helvetica', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.bonus {
+	width: fit-content;
+	border-radius: 24px;
+	border: 2px dashed rgba(33, 26, 18, 0.50);
+	margin: 25px 0 36px 0;
+	text-align: center;
+	color: #211A12;
+	font-family: 'Inter', 'Helvetica', sans-serif;
+	font-size: 64px;
+	font-weight: 800;
+	padding: 30px 20px;
+}
+
+.smallText {
+	max-width: 320px;
+	margin-bottom: 50px;
+	color: #211A12;
+	font-family: 'Inter', 'Helvetica', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	line-height: normal;
+	opacity: 0.8;
+}
+
+.inviteImage {
+	position: absolute;
+	width: 418px;
+	height: 415px;
+	border-radius: 12px;
+	right: -50px;
+	bottom: -50px;
+}
+
+.inviteImageGift {
+	position: absolute;
+	left: -113px;
+	bottom: -70px;
+}
+
+
+@media (max-width: 1300px) {
+	.bonus {
+		font-size: 36px;
+	}
+}
+
+@media (max-width: 820px) {
+	.inviteBlock {
+		min-width: 600px;
+		min-height: 500px;
+	}
+	
+	.inviteText {
+		padding: 5px;
+		margin-left: 0;
+		max-width: 486px;
+		margin-bottom: 100px;
+	}
+	
+	.bonus {
+		margin: 8px 0 14px 0;
+	}
+	
+	.smallText {
+		max-width: 220px;
+	}
+}
+
+
+@media (max-width: 580px) {
+	.inviteBlock {
+		min-width: 488px;
+		min-height: 600px;
+		align-items: normal;
+	}
+	
+	.smallText {
+		max-width: 150px;
+	}
+}
+
+@media (max-width: 430px) {
+	.inviteBlock {
+		min-width: 420px;
+		min-height: 293px;
+		margin: 10px 0;
+		align-items: normal;
+		padding: 5px;
+	}
+	
+	.inviteImage {
+		position: absolute;
+		width: 218px;
+		height: 217px;
+		border-radius: 12px;
+	}
+	
+	.inviteText {
+		flex: 1 1 50%;
+		max-width: 410px;
+	}
+	
+	.bonus {
+		padding: 20px;
+	}
+}
+
+
+@media (max-width: 390px) {
+	.inviteBlock {
+		min-width: 370px;
+		min-height: 293px;
+		margin: 10px;
+		align-items: normal;
+	}
+	
+	.inviteImage {
+		position: absolute;
+		width: 218px;
+		height: 217px;
+		border-radius: 12px;
+	}
+	
+	.inviteText {
+		flex: 1 1 50%;
+		max-width: 370px;
+	}
+	
+	.bonus {
+		padding: 20px;
+	}
+}

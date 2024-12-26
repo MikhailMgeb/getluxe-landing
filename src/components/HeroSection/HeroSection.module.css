@@ -1,21 +1,25 @@
+.heroSectionBlock {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
 .heroSection {
 	background: url('/flight-view.png') no-repeat center center;
 	background-size: cover;
 	padding: 40px;
 	border-radius: 10px;
 	max-width: 1292px;
-	margin: 0 auto;
 }
 
 .container {
-	margin: 0 auto;
 	text-align: center;
 }
 
 .features {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 50px;
+	margin-bottom: 140px;
 }
 
 .feature {
@@ -26,9 +30,9 @@
 
 .featureSubTitle {
 	color: #1c1c1e;
-	font-family: 'UNCAGE', Arial, sans-serif;
+	font-family: var(--font-myFont), Arial, sans-serif;
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 700;
 	line-height: 26px;
 	text-transform: uppercase;
 }
@@ -50,7 +54,7 @@
 
 .subtitle {
 	display: flex;
-	align-items: center; /* Вертикальное выравнивание */
+	align-items: center;
 	font-size: 16px;
 	font-weight: 300;
 	margin-bottom: 20px;
@@ -61,8 +65,8 @@
 .subtitle::before {
 	content: "";
 	display: inline-block;
-	border-bottom: 2px solid #000; /* Линия */
-	width: 40px; /* Длина линии */
+	border-bottom: 2px solid #000;
+	width: 40px;
 }
 
 .title {
@@ -93,8 +97,45 @@
 }
 
 @media (max-width: 768px) {
+	.featureDescription {
+		color: #000;
+	}
+	
 	.features {
 		flex-direction: column;
-    gap: 40px;
+		gap: 40px;
 	}
 }
+
+@media (max-width: 430px) {
+	.heroSection {
+		padding: 16px;
+		border-radius: 10px;
+		max-width: 420px;
+		margin: 0 5px;
+	}
+	
+	.title {
+		font-size: 24px;
+		line-height: 30px;
+		margin: 20px 0 40px 0;
+	}
+	
+	.button {
+		width: 224px;
+		padding: 20px 30px;
+		border-radius: 10px;
+	}
+	
+	.features {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 390px) {
+	.heroSection {
+		padding: 12px;
+		max-width: 380px;
+	}
+}
+

@@ -110,4 +110,21 @@
 	.socialIcons {
 		justify-content: flex-start;
 	}
+	
+	.footer {
+		margin: 10px;
+	}
+	
 }
+
+@media (max-width: 430px){
+	.footer {
+		padding: initial;
+	}
+	
+	.container {
+		gap: 20px;
+		padding: initial;
+	}
+}
+

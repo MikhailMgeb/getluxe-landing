@@ -1,0 +1,81 @@
+.step {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.textSendCode {
+	font-family: 'Inter', 'Helvetica', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.textPhone {
+	font-family: 'Inter', 'Helvetica', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.codeContainer {
+	display: flex;
+	justify-content: flex-start;
+	gap: 10px;
+	margin: 20px 0;
+}
+
+.responseErrorText {
+	font-family: 'Inter', 'Helvetica', sans-serif;
+	color: crimson;
+}
+
+.codeInput {
+	width: 40px;
+	outline: none;
+	height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	background-color: inherit;
+}
+
+.buttons {
+	display: flex;
+	justify-content: flex-start;
+	gap: 20px;
+}
+
+.timer {
+	margin: 10px 0;
+	color: #555;
+}
+
+.btn {
+	padding: 20px 30px;
+	background-color: #C2C2C2;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.isValid {
+	background-color: #000;
+}
+
+.isValid:hover {
+	background-color: #333333;
+}
+
+.btnStepBack {
+	color: #000;
+	background-color: inherit;
+	border: none;
+}
+
+.button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}

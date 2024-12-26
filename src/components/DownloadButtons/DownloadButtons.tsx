@@ -7,7 +7,7 @@ export default function DownloadButtons ()  {
 	return (
 		<div className={styles.downloadButtons}>
 			<Link
-				href='#'
+				href='https://play.google.com/store/apps/details?id=com.getluxe.getluxe&pcampaignid=web_share'
 				target='_blank'
 				rel='noopener noreferrer'
 				className={styles.button}
@@ -19,12 +19,12 @@ export default function DownloadButtons ()  {
 					height={28}
 				/>
 				<div className={styles.buttonText}>
-					<span className={styles.text}>GET IT ON</span>
-					<span className={styles.text}>Google Play</span>
+					<span className={styles.buttonDescription}>GET IT ON</span>
+					<span className={styles.buttonDescription}>Google Play</span>
 				</div>
 			</Link>
 			<Link
-				href="#"
+				href="https://apps.apple.com/ar/app/getluxe/id6450873603"
 				target="_blank"
 				rel="noopener noreferrer"
 				className={styles.button}
@@ -36,8 +36,8 @@ export default function DownloadButtons ()  {
 					height={28}
 				/>
 				<div className={styles.buttonText}>
-					<span className={styles.text}>Download on the</span>
-					<span className={styles.text}>App Store</span>
+					<span className={styles.buttonDescription}>Download on the</span>
+					<span className={styles.buttonDescription}>App Store</span>
 				</div>
 			</Link>
 		</div>

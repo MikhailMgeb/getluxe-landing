@@ -1,0 +1,38 @@
+.container {
+	max-width: 1292px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 170px;
+	gap: 56px;
+}
+
+.inviteStepContainer {
+	max-width: 100%;
+}
+
+@media (max-width: 1300px) {
+	.container {
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+}
+
+
+@media (max-width: 500px) {
+	.container {
+		flex-direction: column;
+		margin: 0 5px 30px 5px;
+		align-items: center;
+	}
+}
+
+@media (max-width: 390px) {
+	.container {
+		margin: 0 5px 30px 5px;
+	}
+	
+	.inviteStepContainer {
+		max-width: 380px;
+	}
+}
